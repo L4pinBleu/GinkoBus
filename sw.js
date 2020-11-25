@@ -1,8 +1,31 @@
 /**
   * Service Worker
   */
+
+
 var cacheName      = 'bigFatBus';
-var contentToCache = [];
+var appShellFiles  =
+[
+  './app.js',
+  './index.html',
+  './manifest.webmanifest',
+  './style.css',
+  './dataToLoad.json',
+  './icons/favicon.ico',
+  './icons/icon-32.png',
+  './icons/icon-64.png',
+  './icons/icon-96.png',
+  './icons/icon-128.png',
+  './icons/icon-168.png',
+  './icons/icon-180.png',
+  './icons/icon-192.png',
+  './icons/icon-256.png',
+  './icons/icon-512.png',
+  './icons/maskable_icon.png',
+];
+
+// Var is used if new cache need to be set.
+var contentToCache = appShellFiles;
 
 self.addEventListener('install', (e) => {
   console.log('[Service Worker] Install');
@@ -21,7 +44,7 @@ self.addEventListener('fetch', (e) => {
           console.log('[Service Worker] Fetching resource: '+e.request.url);
       return r || fetch(e.request).then((response) => {
                 return caches.open(cacheName).then((cache) => {
-          console.log('[Service Worker] Caching new resource: '+e.request.url);
+          console.log('[Service Worker] Caching new resource: ' + e.request.url);
           cache.put(e.request, response.clone());
           return response;
         });
