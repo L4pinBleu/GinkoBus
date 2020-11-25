@@ -6,37 +6,38 @@
     <meta charset="utf-8">
     <meta name="description" content="A Ginko Bus app for teaching purposes.">
     <link rel="shortcut icon" type="image/x-icon" href="icons/favicon.ico">
+    <link rel="manifest" href="./manifest.webmanifest">
     <meta name="author" content="Fred Dadeau">
-        
+
     <!-- https://developers.google.com/web/fundamentals/design-and-ux/browser-customization/ -->
     <meta name="theme-color" content="#000000">
     <meta property="og:image" content="icons/icon-512.png">
-    
+
     <!-- https://developer.mozilla.org/fr/docs/Mozilla/Mobile/Balise_meta_viewport -->
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimal-ui,shrink-to-fit=no" />    
-    
-    <!-- iOS: 
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimal-ui,shrink-to-fit=no" />
+
+    <!-- iOS:
         https://medium.com/appscope/designing-native-like-progressive-web-apps-for-ios-1b3cdda1d0e8 https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html
     -->
-    <meta name="apple-mobile-web-app-capable" content="yes">    
+    <meta name="apple-mobile-web-app-capable" content="yes">
     <link rel="apple-touch-icon" href="./icons/icon-128.png">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
 
     <!-- application styles -->
     <link rel="stylesheet" href="style.css">
-    
+
     <!-- application scripts -->
     <script src="app.js" defer></script>
 
 </head>
 
 <body>
-    <!-- First page --> 
+    <!-- First page -->
     <div id="bcStart" style="top: -0vh;">
         <h1>Ginko<span>bus</span></h1>
-        
+
         <p></p>
-        
+
         <h2>
             <span>&utrif; </span><br>
             <span>&utrif; </span><br>
@@ -48,8 +49,8 @@
         <input type="radio" name="frame" id="radHome" checked>
         <input type="radio" name="frame" id="radStations">
         <input type="radio" name="frame" id="radLignes">
-        
-        <!-- Home - favorites --> 
+
+        <!-- Home - favorites -->
         <div id="bcHome">
         </div>
         <!-- Stations -->
@@ -67,7 +68,7 @@
             <button class="btnClose"></button>
             <header>
                 <div>
-                    <input type="date"> à 
+                    <input type="date"> à
                     <input type="number" min="0" max="23" step="1"> h
                 </div>
                 <p></p>
@@ -76,7 +77,7 @@
             <div class="liste"></div>
         </aside>
     </main>
-     
+
 </body>
 
 </html>

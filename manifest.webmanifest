@@ -9,7 +9,7 @@
       "sizes": "128x128"
     },
     {
-      "src": "./icons/icons-512.png",
+      "src": "./icons/icon-512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
@@ -18,5 +18,5 @@
   "background_color": "#000000",
   "display": "standalone",
   "scope": "/",
-  "theme_color": "#ff9900",
+  "theme_color": "#ff9900"
 }
