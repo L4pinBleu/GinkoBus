@@ -1,0 +1,22 @@
+{
+  "short_name": "GinkoBus",
+  "name": "GinkoBus : Show all bus now !",
+  "description": "See bus on Ginko network.",
+  "icons": [
+    {
+      "src": "./icons/icon-128.png",
+      "type": "image/png",
+      "sizes": "128x128"
+    },
+    {
+      "src": "./icons/icons-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#000000",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#ff9900",
+}
