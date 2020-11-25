@@ -3,9 +3,6 @@
   */
 var cacheName      = 'bigFatBus';
 
-// Var is used if new cache need to be set.
-var contentToCache = appShellFiles;
-
 self.addEventListener('install', (e) => {
   console.log('[Service Worker] Install');
   e.waitUntil(
